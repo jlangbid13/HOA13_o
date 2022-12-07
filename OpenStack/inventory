@@ -1,8 +1,7 @@
-## Ubuntu remote server 2 ##
-[controllerNode_server]
-192.168.56.103
+[controller]
+192.168.56.104
 
-[computeNode_server]
-192.168.56.103
+[computer]
+192.168.56.104
 
 

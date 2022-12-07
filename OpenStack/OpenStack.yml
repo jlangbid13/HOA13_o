@@ -14,13 +14,13 @@
 - hosts: controller
   become: true
   roles:
-    - sqlDb
-    - messageQ
-    - ntp
+    - SQLDB
+    - MessQueue
+    - NTP
 
 - hosts: computer
   become: true
   roles:
-    - openStack
-    - memCached
-    - etcd
+    - OS
+    - Memcached
+    - ETCD

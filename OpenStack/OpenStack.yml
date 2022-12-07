@@ -11,14 +11,14 @@
     changed_when: false
     when: ansible_distribution == "Ubuntu"
 
-- hosts: controllerNode_server
+- hosts: controller
   become: true
   roles:
     - sqlDb
     - messageQ
     - ntp
 
-- hosts: computeNode_server
+- hosts: computer
   become: true
   roles:
     - openStack
